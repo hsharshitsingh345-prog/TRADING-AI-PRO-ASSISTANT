@@ -1,0 +1,191 @@
+{
+  "books": [
+    {
+      "id": "murphy_ta",
+      "author": "John J. Murphy",
+      "title": "Technical Analysis of the Financial Markets",
+      "category": "Classical Technical Analysis",
+      "rules": [
+        {
+          "pattern": "ASCENDING_TRIANGLE",
+          "condition": "Horizontal resistance with rising swing lows",
+          "rule_quote": "Ascending triangle indicates aggressive buyers stepping in at higher lows. Breakout with volume confirms continuation.",
+          "fail_condition": "Failure to break resistance followed by break below ascending trendline constitutes a distribution trap."
+        },
+        {
+          "pattern": "INVERSE_HEAD_AND_SHOULDERS",
+          "condition": "Left shoulder, lower head, higher right shoulder with neckline break",
+          "rule_quote": "A decisive break of the neckline with expanding volume completes the reversal pattern. Minimum target equals head-to-neckline depth.",
+          "fail_condition": "Retest failing and closing back below neckline invalidates pattern into a bull trap."
+        },
+        {
+          "pattern": "SUPPORT_RESISTANCE_FLIP",
+          "condition": "Prior resistance broken and tested from above",
+          "rule_quote": "Once a resistance level is decisively penetrated, it becomes a support level upon subsequent pullbacks.",
+          "fail_condition": "Deep penetration of broken resistance turning back into resistance signals a false breakout."
+        },
+        {
+          "pattern": "MOVING_AVERAGE_CONFLUENCE",
+          "condition": "Price above 20 EMA, 50 EMA, and 200 EMA",
+          "rule_quote": "When price trades above ascending 20, 50, and 200 EMAs, the path of least resistance is up. Dips to 20/50 EMA are high-probability buying zones.",
+          "fail_condition": "Cross below 200 EMA with expanding volume signals a major trend regime change."
+        }
+      ]
+    },
+    {
+      "id": "brooks_pa",
+      "author": "Al Brooks",
+      "title": "Reading Price Charts Bar by Bar",
+      "category": "Pure Price Action",
+      "rules": [
+        {
+          "pattern": "WEAK_PULLBACK_HIGH2",
+          "condition": "Two-legged pullback with small overlapping bars into moving average in strong trend",
+          "rule_quote": "A weak, choppy two-legged pullback (High 2 setup) into the 20 EMA is the hallmark of institutional absorption. Expect trend resumption.",
+          "fail_condition": "Large consecutive trend bars against the primary trend invalidate the pullback and signal deep correction or reversal."
+        },
+        {
+          "pattern": "CLIMAX_EXHAUSTION",
+          "condition": "Consecutive large trend bars with massive expansion away from 20 EMA",
+          "rule_quote": "Late large trend bars far from the moving average represent buying/selling climax. Institutions use this to unload; never chase.",
+          "fail_condition": "Buying a climax bar yields terrible risk-to-reward; wait for a two-legged retracement."
+        },
+        {
+          "pattern": "INSIDE_BAR_BREAKOUT",
+          "condition": "Inside bar formed at key structural boundary or moving average",
+          "rule_quote": "Inside bars represent temporary balance. Breakout of inside bar high/low provides high-leverage tight stop entries.",
+          "fail_condition": "Immediate reversal back through the opposite side of the mother bar produces a whipsaw."
+        }
+      ]
+    },
+    {
+      "id": "nison_candles",
+      "author": "Steve Nison",
+      "title": "Japanese Candlestick Charting Techniques",
+      "category": "Candlestick Formations",
+      "rules": [
+        {
+          "pattern": "BULLISH_ENGULFING",
+          "condition": "Green body completely covers preceding red candle body at support",
+          "rule_quote": "Bullish engulfing at a support or oversold zone shows bulls completely overwhelming bears in a single session.",
+          "fail_condition": "If subsequent candle closes below the low of the engulfing candle, the setup is dead."
+        },
+        {
+          "pattern": "BEARISH_ENGULFING",
+          "condition": "Red body completely covers preceding green candle body at resistance",
+          "rule_quote": "Bearish engulfing at resistance marks strong rejection and seller dominance.",
+          "fail_condition": "Close above engulfing candle high invalidates."
+        },
+        {
+          "pattern": "MORNING_STAR",
+          "condition": "Bearish candle, followed by small indecision star, followed by strong bullish candle closing >50% of first candle",
+          "rule_quote": "Morning Star is a premier three-candle bottom reversal pattern indicating decisive exhaustion of selling pressure.",
+          "fail_condition": "Close below the star's low confirms failed reversal."
+        },
+        {
+          "pattern": "HAMMER_PINBAR",
+          "condition": "Long lower shadow (2-3x body) rejecting key support level",
+          "rule_quote": "The long lower shadow reflects rejection of lower prices by institutions stepping in with aggressive limit bids.",
+          "fail_condition": "Immediate break of the hammer's low indicates trapped buyers."
+        },
+        {
+          "pattern": "SHOOTING_STAR",
+          "condition": "Long upper shadow rejecting resistance with small lower body",
+          "rule_quote": "Shooting star shows intraday rally completely faded by aggressive institutional supply.",
+          "fail_condition": "Breakout above the upper wick invalidates."
+        }
+      ]
+    },
+    {
+      "id": "ict_smc",
+      "author": "Smart Money Concepts / ICT",
+      "title": "Institutional Order Flow & Market Structure",
+      "category": "Smart Money Concepts",
+      "rules": [
+        {
+          "pattern": "BULLISH_ORDER_BLOCK",
+          "condition": "Last bearish down-close candle prior to an aggressive upward displacement that breaks market structure (BOS)",
+          "rule_quote": "The Bullish Order Block (OB) is where institutions placed large buy orders. Retests into the top/midpoint (consequent encroachment) of this block offer sniper long entries.",
+          "fail_condition": "A candle body close below the bottom of the Order Block invalidates the institutional structure."
+        },
+        {
+          "pattern": "BEARISH_ORDER_BLOCK",
+          "condition": "Last bullish up-close candle prior to an aggressive downward displacement breaking structure",
+          "rule_quote": "Institutions mitigated longs and loaded shorts in this block. Retest of the Bearish OB offers high-probability shorting.",
+          "fail_condition": "A candle body close above the Bearish OB high invalidates."
+        },
+        {
+          "pattern": "FAIR_VALUE_GAP_FVG",
+          "condition": "3-candle imbalance where Candle 1 High and Candle 3 Low do not overlap (Bullish FVG)",
+          "rule_quote": "FVGs represent inefficient price delivery caused by institutional urgency. Price gravitationally returns to balance these gaps before continuing.",
+          "fail_condition": "Full displacement through the FVG without reaction indicates opposite-side order flow dominance."
+        },
+        {
+          "pattern": "LIQUIDITY_SWEEP",
+          "condition": "Price pierces previous swing high/low (BSL/SSL), triggers stop orders, and sharply reverses inside the range",
+          "rule_quote": "Market makers hunt retail breakout traders and stop-losses to engineer liquidity for their opposing large orders. Trade in the direction of the sweep reversal.",
+          "fail_condition": "Continued displacement beyond the liquidity level with strong volume confirms real breakout rather than a sweep."
+        },
+        {
+          "pattern": "DISCOUNT_ZONE_ENTRY",
+          "condition": "Price retraces into the lower 50% (Discount) of the dealing range, ideally 61.8% to 78.6% OTE",
+          "rule_quote": "Smart money never buys in Premium (>50%). They buy in Discount (<50%) at unmitigated demand or order blocks.",
+          "fail_condition": "Break below the dealing range swing low invalidates the higher-timeframe bullish structure."
+        }
+      ]
+    },
+    {
+      "id": "wyckoff_method",
+      "author": "Richard D. Wyckoff",
+      "title": "The Wyckoff Method of Trading and Investing",
+      "category": "Wyckoff Structural Analysis",
+      "rules": [
+        {
+          "pattern": "WYCKOFF_SPRING",
+          "condition": "Terminal shakeout below trading range support that quickly re-enters range on declining or absorbing volume",
+          "rule_quote": "The Wyckoff Spring is the ultimate test of supply in Phase C. It clears all weak-hand stops before the markup begins.",
+          "fail_condition": "If price continues falling with expanding volume (markdown), the Spring is aborted."
+        },
+        {
+          "pattern": "SIGN_OF_STRENGTH_SOS",
+          "condition": "Wide spread candle on expanding volume breaking above resistance of trading range (Jump Across the Creek)",
+          "rule_quote": "SOS proves smart money has absorbed floating supply. Wait for a low-volume Backup (LPS) to buy.",
+          "fail_condition": "Failure to hold above broken resistance turns SOS into an Upthrust."
+        },
+        {
+          "pattern": "UPTHRUST_AFTER_DISTRIBUTION_UTAD",
+          "condition": "Temporary false breakout above trading range resistance followed by rapid breakdown back into the range",
+          "rule_quote": "UTAD traps breakout buyers and triggers buy-stops before smart money initiates markdown.",
+          "fail_condition": "Sustained trading above range with heavy volume invalidates distribution."
+        }
+      ]
+    },
+    {
+      "id": "coulling_vsa",
+      "author": "Anna Coulling",
+      "title": "A Complete Guide To Volume Price Analysis",
+      "category": "Volume Spread Analysis (VSA)",
+      "rules": [
+        {
+          "pattern": "EFFORT_VS_RESULT_BULLISH",
+          "condition": "High volume with narrow spread candle at support or large volume with bullish candle closing near highs",
+          "rule_quote": "High volume at support with narrow spread indicates smart money absorbing selling. Price will soon rally.",
+          "fail_condition": "High volume with large downward spread indicates real supply hitting the market."
+        },
+        {
+          "pattern": "LOW_VOLUME_BREAKOUT_FAKEOUT",
+          "condition": "Price breaks support or resistance but volume is below 20-period moving average",
+          "rule_quote": "Breakouts on low volume lack institutional commitment. Low volume breakout is a high-probability bull/bear trap.",
+          "fail_condition": "Follow-through volume stepping in later can salvage, but initial trade must be avoided."
+        },
+        {
+          "pattern": "STOPPING_VOLUME",
+          "condition": "Deep downtrend met with ultra-high volume and long lower wick",
+          "rule_quote": "Stopping volume signals institutional buyers absorbing the final wave of panicking retail sellers.",
+          "fail_condition": "Continued heavy volume pushing lower breaks stopping level."
+        }
+      ]
+    }
+  ]
+}
+

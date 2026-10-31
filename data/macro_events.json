@@ -1,0 +1,45 @@
+{
+  "macro_events": [
+    {
+      "id": "rbi_mpc",
+      "name": "RBI Monetary Policy Meeting",
+      "impact": "HIGH",
+      "typical_window": "10:00 AM - 10:45 AM IST",
+      "rule": "Avoid taking new directional breakout trades 30 minutes before and 20 minutes after RBI rate decision. Expect violent two-sided wicks that sweep retail stop-losses."
+    },
+    {
+      "id": "fed_fomc",
+      "name": "US Federal Reserve FOMC Rate Decision & Presser",
+      "impact": "CRITICAL",
+      "typical_window": "11:30 PM - 1:00 AM IST / 2:00 PM EST",
+      "rule": "Algorithmic stop hunting runs 50-100 pips in both directions. Hold zero intraday leverage; wait for 15-minute candle to close outside initial knee-jerk range."
+    },
+    {
+      "id": "us_cpi",
+      "name": "US Consumer Price Index (CPI) Inflation Release",
+      "impact": "HIGH",
+      "typical_window": "6:00 PM / 7:00 PM IST (8:30 AM EST)",
+      "rule": "Spreads widen exponentially on Indices, Gold, and Forex. Do not place tight market orders. Wait for the 5-minute candle close after release."
+    },
+    {
+      "id": "weekly_expiry_afternoon",
+      "name": "Nifty/BankNifty Weekly Expiry Afternoon Gamma Move",
+      "impact": "HIGH",
+      "typical_window": "1:30 PM - 2:30 PM IST",
+      "rule": "Option seller stop runs frequently produce sharp counter-trend traps or massive 0-hero gamma moves. Scalp only with strict system trailing stops."
+    },
+    {
+      "id": "market_open_bell",
+      "name": "Market Opening Flurry (First 15 Minutes)",
+      "impact": "MEDIUM_HIGH",
+      "typical_window": "9:15 AM - 9:30 AM IST / 9:30 AM - 9:45 AM EST",
+      "rule": "Retail overnight orders execute at open creating artificial wicks and price extremes. Wait for 15-minute initial balance to form."
+    }
+  ],
+  "session_rules": {
+    "asian_session": "Range bound, builds liquidity on both sides (Asian high/low).",
+    "london_open": "Known for 'Judas Swing' - fake run opposite to true daily trend to sweep Asian liquidity.",
+    "ny_session": "High volume trend expansion; overlaps with London session between 6:30 PM - 9:30 PM IST."
+  }
+}
+
